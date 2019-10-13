@@ -10,13 +10,13 @@
     <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false'>
         <!-- create your content here. just a box for now -->
-        <a-marker preset="hiro">
+      
        <a-assets>
     <a-asset-item id="Heart" src="https://raw.githubusercontent.com/hirobg/hirobg.github.io/master/Heart.gltf"></a-asset-item>
          </a-assets>
 
   <a-entity gltf-model="#Heart"></a-entity>
-          </a-marker>
+         <a-marker-camera preset='hiro'></a-marker-camera>
 </a-scene>
       
     </body>
